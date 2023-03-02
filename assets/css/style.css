@@ -24,12 +24,12 @@
     --font-semi-bold: 600;
 
     /* Margem bottom */
-    -m-0-5: .5rem;
-    -m-0-75: .75rem;
-    -m-1: 1rem;
-    -m-1-5: 1.5rem;
-    -m-2: 2rem;
-    -m-2-5: 2.5rem;
+    --m-0-5: .5rem;
+    --m-0-75: .75rem;
+    --m-1: 1rem;
+    --m-1-5: 1.5rem;
+    --m-2: 2rem;
+    --m-2-5: 2.5rem;
 
     /* Card padding */
     --card-padding: 1.9rem 0.95rem;
@@ -189,4 +189,38 @@ h3 {
     height: 0.3rem;
     background-color: var(--color-primary);
     border-radius: 50%;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+.home .intro {
+    max-width: 540px;
+    align-items: center;
+}
+
+.home .intro img {
+    margin-bottom: var(--m-1);
+}
+
+.home .intro .social-icons {
+    margin-top: var(--m-1-5);
+    margin-bottom: var(--m-2);
+}
+
+.home .intro .social-icons li {
+    display: inline-block;
+}
+
+.home .intro .social-icons li:not(:last-child) {
+    margin-right: var(--m-1-5);
+}
+
+.home .intro .social-icons a {
+    font-size: var(--h3-font-size);
 }
