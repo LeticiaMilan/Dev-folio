@@ -8,3 +8,28 @@
     --primary-color: #edf2fc;
     --secondary-color: #151439;
 }
+
+body {
+    font-family: Josefin Sans,sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #784cfb;
+    background: var(--main-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #d3c4ff;
+    border-radius: 10px;
+}
