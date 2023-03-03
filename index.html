@@ -2,81 +2,96 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon-leticiamilan.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#784cfb">
+    <meta name="description" content="...">
+    <meta name="keywords" content="Letícia Milan, LeticiaMilan Frontend developer, LeticiaMilan">
+    <meta name="author" content="Letícia Milan">
     <title>Dev-Folio</title>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+    <!-- ======== CSS here ======== -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 
 </head>
 <body>
-    <header class="header" id="header">
-        <nav class="nav container padd-15">
-            <!--Logo-->
-            <a href="#" class="nav-logo" id="nav-logo">
-                <h2>Dev-folio</h2>
-            </a>
-            <!--Menu-->
-            <div class="nav-menu" id="nav-menu">
-                <!--List-->
-                <ul class="nav-list">
-                    <li class="nav-item active-link">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#about" class="nav-link">Sobre Mim</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#experience" class="nav-link">Experiência</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#pricing" class="nav-link"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#portfolio" class="nav-link">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contato</a>
-                    </li>
-                </ul>
-            </div>
-            <!--btn-->
-            <div class="nav-btns">
-                <!--theme change btn-->
-                <i class="lni lni-pallet change-theme" id="theme-button"></i>
-                <!--toggle btn-->
-                <div class="nav-toggle" id="nav-toggle">
-                    <i class="lni lni-grid-alt"></i>
-                </div>
-            </div>
-        </nav>
-    </header>
 
-    <main class="main-content">
-        <section class="home" id="home">
-            <div class="container">
-                <div class="intro">
-                    <img src="assets/img/avatar-4" alt="">
-                    <h1>Letícia Milan</h1>
-                    <span>I'm a <span class="info-text">Front-End developer and UI/UX Designer</span></span>
-                    <ul class="social-icons">
-                        <li><a href="#"><i class="lni lni-instagram"></i></a></li>
-                        <li><a href="#"><i class="lni lni-twitter"></i></a></li>
-                        <li><a href="#"><i class="lni lni-behance"></i></a></li>
-                        <li><a href="#"><i class="lni lni-dribbble"></i></a></li>
-                        <li><a href="#"><i class="lni lni-pinterest"></i></a></li>
-                    </ul>
-                    <div>
-                        <a href="#" class="btn btn-default">Contate-me</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+    <div id="root">
+        <div class="App">
+            <header id="header-sticky" class="sticky">
+                <div class="container">
+                    <nav class="navbar container navbar-expand-lg navbar-light bg-nav">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="/">
+                                ⚛️ Letícia
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon">
+                                    <i class="uil uil-list-ul">
+                                    </i>
+                                </span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/">
+                                            <i class="uil uil-estate">
+                                            </i> Home 
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">
+                                            <i class="uil uil-user">
 
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+                                            </i> About</a>
+                                    </li>                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#skills">
+                                            <i class="uil uil-react">                                           
+                                            </i> Skills
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#experience">
+                                            <i class="uil uil-bag-alt">
+                                            </i> Experience
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#blog">
+                                            <i class="uil uil-pen">                                             
+                                            </i> Projects
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact">
+                                            <i class="uil uil-calling">                                                
+                                            </i> Contact
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="d-flex">
+                                    <input type="checkbox" class="checkbox" id="checkbox">
+                                    <label for="checkbox" class="checkbox-label">
+                                        <i class="uil uil-moon">
+                                        </i>
+                                        <i class="uil uil-sun">                                            
+                                        </i>
+                                        <span class="ball">
+
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- ================= -->
+        </div>      
+    </div>
 </body>
 </html>
