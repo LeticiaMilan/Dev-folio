@@ -561,6 +561,30 @@ nav.open .links {
     color: #fff;
 }
 
+/* ======== About ======== */
+
+#about {
+    background-color: var(--primary-color);
+}
+
+#about .about-content {
+    padding-top: 60px;
+}
+
+#about ul {
+    list-style: none;
+}
+
+#about ul li {
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+#about ul li i {
+    color: var(--main-color);
+}
+
 /* ::-webkit-scrollbar {
     width: 6px;
 }
