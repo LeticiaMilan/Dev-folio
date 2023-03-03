@@ -588,6 +588,123 @@ nav.open .links {
     color: var(--main-color);
 }
 
+/* ======== Experience ======== */
+
+#experience {
+    background-color: var(--primary-color);
+}
+
+.exp-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.exp-list li {
+    position: relative;
+    padding: 25px 20px 20px 35px;
+    margin: 0 0 35px;
+    background: #ffffff;
+    border-radius:6px;
+    box-shadow:0 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.exp-list li:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    bottom: 0;
+    border-radius:8px 0 0 8px;
+    border-left: 5px solid var(--main-color);
+}
+
+.exp-list .icon {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -5px;
+    right: 0;
+    line-height: 16px;
+    text-align: center;
+    z-index: 1;
+    border-radius: 20px;
+    transform:rotate(45deg);
+    box-shadow:0 0px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.exp-list .icon i{
+    transform:rotate(-45deg); 
+}
+
+.exp-list .time {
+    color: #fff;
+    font-size: 12px;
+    padding: 3px 12px;
+    display: inline-block;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: #252525;
+    opacity: .8;
+}
+
+.exp-list h5 {
+    font-size: 18px;
+    margin: 7px 0 10px;
+}
+
+.exp-list p {
+    margin: 0;
+    color: #b9b9b9;
+    font-size: 14px;
+    font-weight:400;
+}
+
+.exp-listx .place {
+    opacity: .8;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    padding-left: 26px;
+}
+
+.exp-list .place:before {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    left: 7px;
+    top: 9px;
+    opacity: .8;
+}
+
+.exp-list .time {
+    background-color: #ececec;
+    box-shadow:0 2px 3px rgba(0, 0, 0, 0.02);
+}
+
+.exp-list .time{
+    color: #2b2b2b;
+    line-height:1.6;
+    font-weight: 500;
+}
+
+.exp-list p {
+    color: #2b2b2b;
+    line-height:1.8;
+    font-weight: 400;
+}
+
+.exp-list h5 {
+    font-size: 17px;
+    line-height:1.5;
+}
+
+
 
 /* ======== Responsive ======== */
 
